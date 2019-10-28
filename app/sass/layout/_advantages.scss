@@ -1,0 +1,81 @@
+.advantages {
+  padding-top: 5.7rem;
+  padding-bottom: 1.5rem;
+  background-color: #f3f3f3;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+
+  &__item {
+    flex: 0 0 calc(50% - 3rem);
+    display: flex;
+    margin-bottom: 3.5rem;
+
+    &:nth-child(odd) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__info {
+    flex-shrink: 1;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    margin-right: 1.5rem;
+    background-image: url(../../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+
+    &--1 {
+      width: 62px;
+      height: 65px;
+      background-position: -5px -5px;
+    }
+
+    &--2 {
+      width: 62px;
+      height: 58px;
+      background-position: -77px -5px;
+    }
+
+    &--3 {
+      width: 58px;
+      height: 50px;
+      background-position: -149px -5px;
+    }
+
+    &--4 {
+      width: 58px;
+      height: 53px;
+      background-position: -217px -5px;
+    }
+
+    &--5 {
+      width: 57px;
+      height: 56px;
+      background-position: -149px -68px;
+    }
+
+    &--6 {
+      width: 53px;
+      height: 52px;
+      background-position: -216px -68px;
+    }
+
+    &--7 {
+      width: 56px;
+      height: 57px;
+      background-position: -5px -130px;
+    }
+
+    &--8 {
+      width: 64px;
+      height: 55px;
+      background-position: -71px -130px;
+    }
+  }
+}
