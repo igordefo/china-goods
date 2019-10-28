@@ -1,0 +1,23 @@
+.contacts {
+  display: flex;
+  color: #fff;
+
+  &__question > * {
+    display: block;
+    text-align: right;
+  }
+
+  &__question {
+    margin-right: 2rem;
+    span {
+      font-weight: 300;
+      line-height: 2.4rem;
+    }
+    a {
+      color: currentColor;
+      font-size: 1.9rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+    }
+  }
+}

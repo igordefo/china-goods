@@ -6,7 +6,10 @@
 @import 'base/helpers';
 
 @import 'components/navigation';
+@import 'components/contacts';
 @import 'components/button';
 @import 'components/hamburger';
+
+@import 'layout/header';
 
 @import 'vendors/bootstrap-grid.scss';
