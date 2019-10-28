@@ -1,0 +1,43 @@
+.btn {
+  display: block;
+  width: 15.3rem;
+  height: 4.2rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 4.2rem;
+  text-transform: uppercase;
+  color: #fff;
+  @include transition;
+
+  &--white {
+    color: $color-text;
+    background-color: #e8d8b6;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    align-self: center;
+    transition: all 0s;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#e8d8b6, 10%);
+    }
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    &:hover,
+    &:focus {
+      background-color: darken($color-primary, 10%);
+    }
+  }
+
+  &--dark {
+    background-color: $color-text;
+
+    &:hover,
+    &:focus {
+      background-color: darken($color-text, 10%);
+    }
+  }
+}

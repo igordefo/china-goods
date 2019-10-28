@@ -1,0 +1,13 @@
+@mixin underline {
+  box-shadow: 0px 1px 0px 0px #fff;
+}
+
+@mixin transition {
+  transition: all 0.2s ease-out;
+}
+
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
