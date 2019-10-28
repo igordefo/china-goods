@@ -1,4 +1,5 @@
-.agent {
+.agent,
+.manager {
   overflow: hidden;
   position: relative;
   height: 34.2rem;
@@ -69,4 +70,23 @@
 
 .agent__content:hover + .background {
   filter: blur(0px);
+}
+
+.manager__content:hover + .background {
+  filter: blur(0px);
+}
+
+.manager {
+  .background {
+    background: url(../../img/mask.png), url(../../img/bg-manage.png) no-repeat;
+  }
+
+  &__icon::before {
+    background-image: url(../../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 53px;
+    height: 53px;
+    background-position: -290px -140px;
+  }
 }

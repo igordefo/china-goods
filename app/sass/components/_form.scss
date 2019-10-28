@@ -1,0 +1,40 @@
+.form {
+  position: relative;
+  padding-top: 6.6rem;
+  padding-bottom: 5.5rem;
+  text-align: center;
+  border: 1px solid #898989;
+
+  input {
+    padding: 1.7rem 2.8rem;
+    min-width: 27rem;
+    border: 1px solid #898989;
+    border-radius: 20rem;
+  }
+
+  &__btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2.3rem;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: #fff;
+    }
+
+    &::before {
+      left: -1.5rem;
+    }
+
+    &::after {
+      right: -1.5rem;
+    }
+  }
+}
