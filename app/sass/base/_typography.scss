@@ -24,4 +24,22 @@ body {
   color: $color-primary;
   font-size: 1.6rem;
   font-weight: 700;
+  text-align: center;
+}
+
+.description {
+  color: #2e2e2e;
+  font-size: 2.1rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+  text-align: center;
+
+  &::before {
+    content: '';
+    display: block;
+    margin: 2rem auto 1.7rem auto;
+    width: 14.8rem;
+    height: 0.1rem;
+    background-color: $color-primary;
+  }
 }

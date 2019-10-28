@@ -1,0 +1,18 @@
+.work {
+  padding-top: 5.1rem;
+  padding-bottom: 5.7rem;
+
+  &__list {
+    margin-top: 3.7rem;
+  }
+
+  &__image {
+    margin-bottom: 2.5rem;
+  }
+
+  &__text {
+    margin-top: 1.5rem;
+    text-align: justify;
+    text-align-last: center;
+  }
+}

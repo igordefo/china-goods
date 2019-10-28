@@ -1,0 +1,72 @@
+.agent {
+  overflow: hidden;
+  position: relative;
+  height: 34.2rem;
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    position: relative;
+    width: 10.2rem;
+    height: 10.2rem;
+    border: 0.1rem solid #ffffff;
+    border-radius: 50%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 4.8rem;
+      height: 5.1rem;
+      background-image: url(../../img/css/agent.png);
+      background-repeat: no-repeat;
+      @include center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2.2rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+  }
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    padding: 0 1.5rem;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+
+  &__description {
+    max-width: 98.4rem;
+    margin: 0 auto;
+    font-size: 1.9rem;
+    font-weight: 300;
+    line-height: 2.7rem;
+  }
+}
+
+.background {
+  background: url(../../img/mask.png), url(../../img/bg-agent.png) no-repeat;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  transform: scale(1.04);
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 1s ease;
+
+  &:hover {
+    filter: blur(0px);
+  }
+}
+
+.agent__content:hover + .background {
+  filter: blur(0px);
+}
