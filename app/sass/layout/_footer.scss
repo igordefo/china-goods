@@ -1,0 +1,54 @@
+.footer {
+  padding: 2.5rem 0;
+  background-color: $color-background;
+  color: #fff;
+  font-size: 1.3rem;
+
+  &__top {
+    padding-bottom: 2.6rem;
+    border-bottom: 1px solid #898989;
+  }
+
+  &__bottom {
+    padding-top: 1.9rem;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    margin-left: 4.3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+
+  &__copyright {
+    opacity: 0.6;
+    font-weight: 300;
+    line-height: 1.7rem;
+  }
+
+  &__confident {
+    color: $color-primary;
+    font-weight: 300;
+    line-height: 1.7rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &__dev {
+    display: flex;
+    align-items: center;
+
+    span {
+      display: block;
+      margin-right: 1rem;
+      opacity: 0.6;
+      font-weight: 300;
+      line-height: 1.7rem;
+    }
+  }
+}
