@@ -7,9 +7,35 @@
 
   input {
     padding: 1.7rem 2.8rem;
-    min-width: 27rem;
+    min-width: 26.8rem;
     border: 1px solid #898989;
     border-radius: 20rem;
+
+    &::placeholder {
+      color: #616467;
+      font-family: Roboto;
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+  }
+
+  textarea {
+    margin-top: 0.7rem;
+    padding-top: 1.8rem;
+    padding-left: 2.5rem;
+    width: 100%;
+    height: 7.1rem;
+    outline: none;
+    resize: none;
+    border: 1px solid #898989;
+    border-radius: 1rem;
+
+    &::placeholder {
+      color: #616467;
+      font-family: Roboto;
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
   }
 
   &__btn {

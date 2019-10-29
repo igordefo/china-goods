@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   </head>
   <body>
     <header class="header">
@@ -314,5 +315,65 @@
         </ul>
       </div>
     </section>
+    <section class="review">
+      <h2 class="title">Отзывы наших клиентов</h2>
+      <p class="description">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</p>
+      <div class="container">
+        <div class="slider">
+          <div class="slider__item">
+            <img src="img/user.png" alt="User" class="slider__photo">
+            <p class="slider__user">Анисимова Ольга</p>
+            <p class="slider__text">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</p>
+          </div>
+          <div class="slider__item">
+            <img src="img/user.png" alt="User" class="slider__photo">
+            <p class="slider__user">Анисимова Ольга</p>
+            <p class="slider__text">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</p>
+          </div>
+          <div class="slider__item">
+            <img src="img/user.png" alt="User" class="slider__photo">
+            <p class="slider__user">Анисимова Ольга</p>
+            <p class="slider__text">Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="question">
+      <div class="question__form">
+        <div class="question__heading">
+          <h2 class="question__title">Остались вопросы?</h2>
+          <p class="question__description">Напишите нам!</p>
+        </div>
+        <form action="POST" class="form">
+          <input type="text" class="form__name" placeholder="Ваше имя...">
+          <input type="tel" name="" id="" class="form__phone" placeholder="Ваш номер телефона...">
+          <input type="email" name="" id="" class="form__email" placeholder="Ваш email...">
+          <textarea placeholder="Сообщение"></textarea>
+          <button class="btn question__btn">Отправить заявку</button>
+        </form>
+      </div>
+      <div class="background"></div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slider').slick({
+          infinite: true,
+          speed: 300,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+          variableWidth: true,
+          focusOnSelect: true,
+          centerPadding: '0',
+          cssEase: 'ease-in-out',
+        });
+      });
+    </script>
   </body>
 </html>

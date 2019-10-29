@@ -1,0 +1,36 @@
+.slider {
+  text-align: center;
+
+  &__item {
+    max-width: 60rem;
+    margin: 0 -3rem;
+  }
+
+  &__photo {
+    margin: 0 auto;
+  }
+
+  &__user {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  &__text {
+    margin: 0 -3rem;
+    text-align: justify;
+    text-align-last: center;
+    font-weight: 300;
+    line-height: 2.201rem;
+  }
+}
+
+.slick-slide {
+  transform: scale(0.6);
+  opacity: 0.3;
+  @include transition;
+}
+
+.slick-slide.slick-current {
+  transform: scale(1);
+  opacity: 1;
+}

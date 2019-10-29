@@ -1,0 +1,41 @@
+.question {
+  overflow: hidden;
+  position: relative;
+  height: 43.8rem;
+  background-color: coral;
+
+  &__form {
+    position: absolute;
+    margin: 0 auto;
+    width: 89.6rem;
+    @include center;
+    z-index: 1;
+  }
+
+  &__heading {
+    padding: 2rem 0;
+    text-align: center;
+    color: #fff;
+    background-color: $color-background;
+  }
+
+  &__title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .form {
+    padding: 1.8rem 4.1rem 2.5rem 4.1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__btn {
+    margin-top: 1.7rem;
+  }
+}

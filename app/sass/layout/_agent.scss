@@ -90,3 +90,17 @@
     background-position: -290px -140px;
   }
 }
+
+.question {
+  .background {
+    background: url(../../img/mask.png), url(../../img/q&a.png) no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    transform: scale(1.04);
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease;
+  }
+}
