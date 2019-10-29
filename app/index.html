@@ -354,6 +354,19 @@
       </div>
       <div class="background"></div>
     </section>
+    <section class="map" id="map">
+      <div class="balloon">
+        <div class="balloon__content">
+          <span class="balloon__head subtitle">г. Москва</span>
+          <span class="balloon__body">
+            ул. Садовническая, дом 5, офис 4-6 <br>
+            700 от м. Новокузнецкая <br>
+            Тел: +7 (926) 423 01 00 <br>
+          </span>
+          <span class="balloon__footer">info@glopt.ru</span>
+        </div>
+      </div>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
@@ -374,6 +387,40 @@
           cssEase: 'ease-in-out',
         });
       });
+    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ebe1e292-fd4c-420b-ba9f-9af842a7c451&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+
+      ymaps.ready(init);
+      function init(){
+
+          var myMap = new ymaps.Map("map", {
+ 
+              center: [55.747956, 37.627202],
+              zoom: 16,
+              controls: ['zoomControl']
+          });
+
+          var myPlacemark = new ymaps.Placemark(
+            [55.747956, 37.627202],
+            {
+              hintContent: 'Global Opt',
+              balloonContentHeader: "г. Москва",
+              balloonContentBody: "ул. Садовническая, дом 5, офис 4-6 <br> 700 от м. Новокузнецкая <br> Тел: +7 (926) 423 01 00 <br>",
+              balloonContentFooter: "info@glopt.ru",
+            },
+            {
+              iconLayout: 'default#image',
+              iconImageHref: 'img/css/pin.png',
+              iconImageSize: [51, 61],
+              iconImageOffset: [-18, -50]
+            }
+          );
+
+        myMap.behaviors.disable(['scrollZoom', 'drag']);
+        myMap.geoObjects.add(myPlacemark);
+      }
     </script>
   </body>
 </html>
