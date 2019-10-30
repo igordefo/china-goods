@@ -17,6 +17,11 @@
 
     &:not(:first-child) {
       margin-left: 3.2rem;
+
+      @media (max-width: 450px) {
+        margin-left: 0;
+        margin-bottom: 2rem;
+      }
     }
   }
 

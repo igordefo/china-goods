@@ -17,11 +17,12 @@
     &::before {
       content: '';
       position: absolute;
-      width: 4.8rem;
+      width: 5.8rem;
       height: 5.1rem;
       background-image: url(../../img/css/agent.png);
       background-repeat: no-repeat;
       @include center;
+      background-position: center;
     }
   }
 

@@ -22,8 +22,8 @@
       <div class="header__background"></div>
       <div class="container">
         <div class="row nav align-center">
-          <a class="logo"><img src="img/logo.png" alt="Logo"/></a>
-          <a href="#" class="menu-toogle hamburger hamburger--slider" id="main-menu-toogle" aria-label="Open main menu" aria-hidden="true">
+          <a href="#" class="logo"><img src="img/logo.png" alt="Logo"/></a>
+          <a class="menu-toogle hamburger hamburger--slider" id="main-menu-toogle" aria-label="Open main menu" aria-hidden="true">
             <span class="sr-only">Open main menu</span>
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
@@ -33,22 +33,22 @@
             <ul class="navigation__list">
               <span class="menu-close">&times;</span>
               <li class="navigation__item">
-                <a href="" class="navigation__link">Преимущества</a>
+                <a class="navigation__link features-link">Преимущества</a>
               </li>
               <li class="navigation__item">
-                <a href="" class="navigation__link">Наша работа</a>
+                <a class="navigation__link work-link">Наша работа</a>
               </li>
               <li class="navigation__item">
-                <a href="" class="navigation__link">Цены</a>
+                <a class="navigation__link price-link">Цены</a>
               </li>
               <li class="navigation__item">
-                <a href="" class="navigation__link">Схема работы</a>
+                <a class="navigation__link scheme-link">Схема работы</a>
               </li>
               <li class="navigation__item">
-                <a href="" class="navigation__link">Отзывы</a>
+                <a class="navigation__link review-link">Отзывы</a>
               </li>
               <li class="navigation__item">
-                <a href="" class="navigation__link">Контакты</a>
+                <a class="navigation__link contacts-link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -403,11 +403,7 @@
         </div>
       </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-      crossorigin="anonymous">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/jquery.waypoints.js"></script>
     <script src="js/vendor/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
@@ -425,10 +421,34 @@
         })
       });
 
+      $('.features-link').click(function() {
+        $('html, body').animate({scrollTop: $('.advantages').offset().top - 80}, 1000);
+      });
+
+      $('.work-link').click(function() {
+        $('html, body').animate({scrollTop: $('.work').offset().top - 80}, 1000);
+      });
+
+      $('.price-link').click(function() {
+        $('html, body').animate({scrollTop: $('.price').offset().top - 80}, 1000);
+      });
+
+      $('.scheme-link').click(function() {
+        $('html, body').animate({scrollTop: $('.scheme').offset().top - 80}, 1000);
+      });
+
+      $('.review-link').click(function() {
+        $('html, body').animate({scrollTop: $('.review').offset().top - 80}, 1000);
+      });
+
+      $('.contacts-link').click(function() {
+        $('html, body').animate({scrollTop: $('.map').offset().top - 85}, 1000);
+      });
+
       var wow = new WOW(
         {
           boxClass:     'wow',      // animated element css class (default is wow)
-          offset:       100,          // distance to the element when triggering the animation (default is 0)
+          offset:       80,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
           scrollContainer: null,    // optional scroll container selector, otherwise use window,
@@ -458,6 +478,7 @@
         const menu = document.querySelector('.navigation');
         const backdrop = document.querySelector('.backdrop');
         const closeButton = document.querySelector('.menu-close');
+        const menuLink = document.querySelector('navigation__link');
   
         let closeMenu = () => {
           menu.style.left = '-20.7rem';
@@ -472,6 +493,7 @@
         
         backdrop.addEventListener('click', closeMenu);
         closeButton.addEventListener('click', closeMenu);
+        menu.addEventListener('click', closeMenu);
       </script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ebe1e292-fd4c-420b-ba9f-9af842a7c451&lang=ru_RU" type="text/javascript">
     </script>

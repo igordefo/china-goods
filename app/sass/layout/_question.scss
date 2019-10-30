@@ -4,6 +4,11 @@
   height: 43.8rem;
   background-color: coral;
 
+  @media (max-width: 768px) {
+    height: auto;
+    min-height: 43.8rem;
+  }
+
   &__form {
     position: absolute;
     margin: 0 auto;
@@ -13,6 +18,14 @@
 
     @media (max-width: 768px) {
       width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      position: relative;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+      transform: none;
     }
   }
 
