@@ -1,0 +1,149 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-feat-1 {
+    width: 62px;
+    height: 65px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon-feat-2 {
+    width: 62px;
+    height: 58px;
+    background-position: -77px -5px;
+}
+
+.sprite-icon-feat-3 {
+    width: 58px;
+    height: 50px;
+    background-position: -149px -5px;
+}
+
+.sprite-icon-feat-4 {
+    width: 58px;
+    height: 53px;
+    background-position: -217px -5px;
+}
+
+.sprite-icon-feat-5 {
+    width: 57px;
+    height: 56px;
+    background-position: -149px -68px;
+}
+
+.sprite-icon-feat-6 {
+    width: 53px;
+    height: 52px;
+    background-position: -216px -68px;
+}
+
+.sprite-icon-feat-7 {
+    width: 56px;
+    height: 57px;
+    background-position: -5px -130px;
+}
+
+.sprite-icon-feat-8 {
+    width: 64px;
+    height: 55px;
+    background-position: -71px -130px;
+}
+
+.sprite-icon-header-1 {
+    width: 64px;
+    height: 48px;
+    background-position: -216px -130px;
+}
+
+.sprite-icon-header-2 {
+    width: 63px;
+    height: 63px;
+    background-position: -145px -188px;
+}
+
+.sprite-icon-header-3 {
+    width: 62px;
+    height: 56px;
+    background-position: -218px -188px;
+}
+
+.sprite-icon-header-4 {
+    width: 67px;
+    height: 54px;
+    background-position: -5px -254px;
+}
+
+.sprite-icon-warranty-1 {
+    width: 60px;
+    height: 52px;
+    background-position: -218px -254px;
+}
+
+.sprite-icon-warranty-2 {
+    width: 53px;
+    height: 54px;
+    background-position: -82px -254px;
+}
+
+.sprite-icon-warranty-3 {
+    width: 61px;
+    height: 57px;
+    background-position: -285px -5px;
+}
+
+.sprite-icon-warranty-4 {
+    width: 58px;
+    height: 58px;
+    background-position: -290px -72px;
+}
+
+.sprite-manage-1 {
+    width: 53px;
+    height: 53px;
+    background-position: -290px -140px;
+}
+
+.sprite-manage-2 {
+    width: 50px;
+    height: 49px;
+    background-position: -290px -203px;
+}
+
+.sprite-manage-3 {
+    width: 51px;
+    height: 57px;
+    background-position: -145px -262px;
+}
+
+.sprite-manage-4 {
+    width: 49px;
+    height: 50px;
+    background-position: -288px -262px;
+}
+
+.sprite-manage-5 {
+    width: 56px;
+    height: 54px;
+    background-position: -5px -322px;
+}
+
+.sprite-manage-6 {
+    width: 50px;
+    height: 50px;
+    background-position: -71px -322px;
+}
+
+.sprite-manage-7 {
+    width: 56px;
+    height: 52px;
+    background-position: -206px -322px;
+}
+
+.sprite-manage-8 {
+    width: 61px;
+    height: 50px;
+    background-position: -272px -322px;
+}
