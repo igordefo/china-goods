@@ -1,0 +1,29 @@
+.sticky {
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 1rem 2.5rem;
+  width: 100%;
+  background-color: rgba($color: $color-background, $alpha: 0.9);
+  z-index: 99;
+
+  @media (max-width: 768px) {
+    padding: 0;
+    padding-right: 1rem;
+  }
+}
+
+.sticky .logo {
+  width: 5.8rem;
+  height: 6rem;
+}
+
+.sticky .contacts {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
