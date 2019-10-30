@@ -2,8 +2,22 @@
   padding-top: 5.1rem;
   padding-bottom: 5.7rem;
 
+  &__item {
+    text-align: center;
+
+    &:not(:last-child) {
+      @media (max-width: 768px) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
   &__list {
     margin-top: 3.7rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__image {

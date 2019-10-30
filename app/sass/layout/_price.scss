@@ -3,6 +3,10 @@
 
   &__list {
     margin-top: 3.4rem;
+
+    @media (max-width: 998px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -16,6 +20,15 @@
 
     &:not(:last-child) {
       margin-right: 2.8rem;
+
+      @media (max-width: 998px) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+    }
+
+    @media (max-width: 998px) {
+      min-height: 35.5rem !important;
     }
   }
 

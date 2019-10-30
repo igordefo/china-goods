@@ -1,9 +1,15 @@
 .slider {
+  margin-top: 3rem;
   text-align: center;
 
   &__item {
     max-width: 60rem;
     margin: 0 -3rem;
+
+    @media (max-width: 768px) {
+      max-width: 35rem;
+      margin: 0 0rem;
+    }
   }
 
   &__photo {
@@ -21,6 +27,35 @@
     text-align-last: center;
     font-weight: 300;
     line-height: 2.201rem;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 3rem;
+    display: block;
+    width: 2.4rem;
+    height: 5rem;
+    border: 0;
+    background-color: transparent;
+    z-index: 1000;
+
+    &--prev {
+      left: 30%;
+      background-image: url(../../img/css/prev-btn.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--next {
+      right: 30%;
+      background-image: url(../../img/css/next-btn.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: 768px) {
+      display: none !important;
+    }
   }
 }
 

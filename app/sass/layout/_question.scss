@@ -10,6 +10,10 @@
     width: 89.6rem;
     @include center;
     z-index: 1;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   &__heading {

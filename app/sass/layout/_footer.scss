@@ -37,6 +37,10 @@
     line-height: 1.7rem;
     text-decoration: underline;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__dev {
@@ -49,6 +53,19 @@
       opacity: 0.6;
       font-weight: 300;
       line-height: 1.7rem;
+    }
+  }
+
+  .ml-auto {
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
+
+  .contacts {
+    @media (max-width: 768px) {
+      width: 100%;
+      justify-content: space-between;
     }
   }
 }

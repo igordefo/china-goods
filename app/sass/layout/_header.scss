@@ -4,18 +4,27 @@
     url(../../img/bg_hero.png);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   min-height: 68rem;
   color: #fff;
   text-align: center;
 
   &__intro {
     padding-top: 1rem;
+
+    @media (max-width: 768px) {
+      padding-top: 10rem;
+    }
   }
 
   &__subtitle {
     margin-bottom: 2.6rem;
     font-size: 2.4rem;
     font-weight: 300;
+
+    @media (max-width: 998px) {
+      font-size: 2.8rem;
+    }
   }
 
   &__title {
@@ -27,6 +36,10 @@
     font-weight: 700;
     text-transform: uppercase;
 
+    @media (max-width: 998px) {
+      font-size: 4.7rem;
+    }
+
     span {
       display: block;
       font-family: 'Roboto Condensed';
@@ -34,6 +47,11 @@
       font-weight: 400;
       text-transform: uppercase;
       color: #fff;
+
+      @media (max-width: 998px) {
+        margin-top: 1rem;
+        font-size: 3.1rem;
+      }
     }
   }
 
@@ -63,6 +81,10 @@
 
   &__features {
     margin-bottom: 3.9rem;
+
+    @media (max-width: 768px) {
+      display: none !important;
+    }
   }
 
   &__feature {
@@ -104,5 +126,14 @@
 
   &__btn {
     min-width: 23rem;
+  }
+}
+
+.logo {
+  img {
+    display: block;
+  }
+  @media (max-width: 1200px) {
+    display: none;
   }
 }

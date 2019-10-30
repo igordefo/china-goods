@@ -1,17 +1,50 @@
 .navigation {
   margin-left: 5.5rem;
+
+  @media (max-width: 1200px) {
+    position: fixed;
+    top: 0;
+    left: -20.7rem;
+    margin: 0;
+    height: 100%;
+    transition: left 0.5s ease;
+    z-index: 99;
+  }
+
   &__list {
     display: flex;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      padding-top: 2.5rem;
+      min-height: 100%;
+      background-color: $color-background;
+    }
   }
 
   &__item {
     &:not(:first-child) {
       padding-left: 1.2rem;
+
+      @media (max-width: 1200px) {
+        padding: 0;
+      }
     }
 
     &:not(:last-child) {
       padding-right: 1.2rem;
       border-right: 1px dotted #616570;
+
+      @media (max-width: 1200px) {
+        padding: 0;
+        border: 0;
+      }
+    }
+
+    &:first-child {
+      @media (max-width: 1200px) {
+        border-top: 1px solid #616570;
+      }
     }
   }
 
@@ -23,6 +56,11 @@
     line-height: 2.2rem;
     border-bottom: 1px solid transparent;
     @include transition;
+
+    @media (max-width: 1200px) {
+      padding: 2.5rem 5rem;
+      border-bottom: 1px solid #616570;
+    }
 
     &:hover,
     &:focus {

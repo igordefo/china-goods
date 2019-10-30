@@ -5,6 +5,9 @@
 @import 'base/typography';
 @import 'base/helpers';
 
+@import 'vendors/bootstrap-grid.scss';
+@import 'vendors/animate.min.scss';
+
 @import 'components/navigation';
 @import 'components/contacts';
 @import 'components/button';
@@ -23,5 +26,4 @@
 @import 'layout/review';
 @import 'layout/question';
 @import 'layout/footer';
-
-@import 'vendors/bootstrap-grid.scss';
+@import 'layout/sticky';

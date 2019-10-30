@@ -7,6 +7,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 3rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -16,6 +20,14 @@
 
     &:nth-child(odd) {
       margin-right: 3rem;
+
+      @media (max-width: 768px) {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-basis: 100%;
     }
   }
 

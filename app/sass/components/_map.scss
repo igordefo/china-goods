@@ -19,6 +19,10 @@
   transform: translateY(-50%);
   z-index: 1;
 
+  @media (max-width: 768px) {
+    display: none;
+  }
+
   &__content {
     margin-top: -5rem;
 
@@ -51,8 +55,4 @@
     border-bottom: 20px solid transparent;
     border-right: 20px solid #fff;
   }
-}
-
-#mapDiv > div > div > div:nth-child(10) > div {
-  opacity: 0 !important;
 }
